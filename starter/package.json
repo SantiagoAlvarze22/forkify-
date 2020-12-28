@@ -14,7 +14,6 @@
     "sass": "^1.30.0"
   },
   "dependencies": {
-    "core-js": "^3.8.1",
-    "regenerator-runtime": "^0.13.7"
+    "@parcel/reporter-dev-server": "^2.0.0-alpha.3"
   }
 }
