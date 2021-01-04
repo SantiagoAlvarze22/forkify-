@@ -1,22 +1,12 @@
 import * as model from './model.js';
 import recipeView from './views/recipeView.js';
 
-//in parcel I ccan import differents kind of files and assets, the thing is bc the assets for icons are not available in my dist carpet, so I have to set a path to take them
-// import icons from '../img/icons.svg'; //parcel 1
-
 //importing regenerator
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
+import { async } from 'regenerator-runtime';
 
 const recipeContainer = document.querySelector('.recipe');
-
-const timeout = function (s) {
-  return new Promise(function (_, reject) {
-    setTimeout(function () {
-      reject(new Error(`Request took too long! Timeout after ${s} second`));
-    }, s * 1000);
-  });
-};
 
 // https://forkify-api.herokuapp.com/v2
 

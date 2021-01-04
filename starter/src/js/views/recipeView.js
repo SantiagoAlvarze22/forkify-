@@ -1,3 +1,5 @@
+//in parcel I ccan import differents kind of files and assets, the thing is bc the assets for icons are not available in my dist carpet, so I have to set a path to take them
+// import icons from '../img/icons.svg'; //parcel 1
 import icons from 'url:../../img/icons.svg'; //parcel 2
 import { Fraction } from 'fractional';
 
@@ -88,7 +90,7 @@ class RecipeView {
         <h2 class="heading--2">Recipe ingredients</h2>
         <ul class="recipe__ingredient-list">
         ${this.#data.ingredients
-          .map(this.#generateMarkupIngridient())
+          .map(this.#generateMarkupIngridient)
           .join('')}       
       </div>
 
