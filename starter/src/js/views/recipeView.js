@@ -23,7 +23,7 @@ class RecipeView extends View {
     });
   }
 
-  addHnadlerBookmark(handler) {
+  addHandlerBookmark(handler) {
     this._parentElement.addEventListener('click', function (e) {
       const btn = e.target.closest('.btn--bookmark');
       if (!btn) return;
