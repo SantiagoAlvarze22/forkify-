@@ -105,7 +105,7 @@ class RecipeView extends View {
           This recipe was carefully designed and tested by
           <span class="recipe__publisher">${
             this._data.publisher
-          }/span>. Please check out
+          }</span>. Please check out
           directions at their website.
         </p>
         <a
